@@ -43,6 +43,7 @@ Important: this dataset predicts income, not real loan approval. In this project
 
 ### Known data issues
 - Missing values are written as `?` in `workclass`, `occupation` and `native.country` (about 7% of rows). They are kept and filled with the category `Unknown`, so no rows are lost and the male/female balance is unchanged.
+- About 24 exact duplicate rows were removed to avoid the same record appearing in both the training and test sets.
 - The classes are imbalanced: far more people earn `<=50K` than `>50K`.
 - Men and women are not equally represented, and their approval rates differ in the raw data. This is what the fairness audit examines.
 
